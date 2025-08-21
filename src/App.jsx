@@ -196,7 +196,7 @@ export default function App() {
       </Section>
 
       <footer className="footer">
-        © {new Date().getFullYear()} {profile.name}. Built with React + Vite.
+        © {new Date().getFullYear()} {profile.name}. jkfaris@gmail.com. Built with React + Vite.
       </footer>
     </div>
   );

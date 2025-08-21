@@ -21,7 +21,7 @@ export const projects = [
       "React app to save and organize recipe information. Emphasized single‑responsibility components and clean state flows.",
     stack: ["React", "HTML5", "CSS", "Bootstrap"],
     links: { live: "https://bakery-inventory-manager.onrender.com", repo: "https://github.com/jkfaris94/bakery-inventory-manager" },
-    image: "/public/recipe.png" // optional screenshot in /public
+    image: "recipe.png" // optional screenshot in /public
   },
   {
     title: "Movie Database Application",
