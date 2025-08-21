@@ -5,10 +5,10 @@ export const profile = {
     "Ex‑MMA fighter & personal trainer turned engineer — disciplined, user‑centered, and shipping clean PERN/MERN apps.",
   location: "Los Angeles, CA",
   phone: "253-906-5208",
-  email: "Johnny@ChampLife.fit",
+  email: "JKFaris@gmail.com",
   website: "https://JohnnyFaris.com",
-  github: "https://github.com/JohnnyFaris",
-  linkedin: "https://www.linkedin.com/in/johnnyfaris",
+  github: "https://github.com/jkfaris94",
+  linkedin: "https://www.linkedin.com/in/johnny-faris/",
   resume: "/resume.pdf" // put resume.pdf in /public
 };
 
