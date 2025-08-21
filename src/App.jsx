@@ -54,7 +54,7 @@ export default function App() {
         </h1>
         <p className="lead">{profile.tagline}</p>
         <div className="stack">
-          <a className="btn btn-primary" href={profile.resume} target="_blank" rel="noreferrer">
+          <a className="btn btn-primary" href={profile.resume} download="Johnny_Faris_resume.pdf" rel="noreferrer">
             Download Resume
           </a>
           <a className="btn btn-outline" href={profile.website} target="_blank" rel="noreferrer">
@@ -67,34 +67,49 @@ export default function App() {
       </div>
 
       {/* Projects */}
-      <Section id="projects" title="Projects">
-        <div className="grid">
-          {projects.map((p, i) => (
-            <div key={i} className="card">
-              <div className="card-body">
-                <div className="card-head">
-                  <div>
-                    <h3 className="h3">{p.title}</h3>
-                    <p className="muted">{p.org} • {p.date}</p>
-                  </div>
-                  <div className="stack">
-                    {p.links.live ? (
-                      <a className="btn btn-primary" href={p.links.live} target="_blank" rel="noreferrer">Live</a>
-                    ) : null}
-                    {p.links.repo ? (
-                      <a className="btn btn-outline" href={p.links.repo} target="_blank" rel="noreferrer">Code</a>
-                    ) : null}
-                  </div>
+<Section id="projects" title="Projects">
+      <div className="grid">
+        {projects.map((p, i) => (
+          <div key={i} className="card">
+            <div className="card-body">
+              {/* Add image above card-head */}
+              {p.image && (
+                <img
+                  src={p.image}
+                  alt={`${p.title} screenshot`}
+                  className="card-image"
+                  style={{ width: "100%", height: "auto", borderRadius: "8px" }}
+                />
+              )}
+              <div className="card-head">
+                <div>
+                  <h3 className="h3">{p.title}</h3>
+                  <p className="muted">{p.org} • {p.date}</p>
                 </div>
-                <p className="muted">{p.description}</p>
-                <div className="tags">
-                  {p.stack.map((s, j) => <Pill key={j}>{s}</Pill>)}
+                <div className="stack">
+                  {p.links.live ? (
+                    <a className="btn btn-primary" href={p.links.live} target="_blank" rel="noreferrer">
+                      Live
+                    </a>
+                  ) : null}
+                  {p.links.repo ? (
+                    <a className="btn btn-outline" href={p.links.repo} target="_blank" rel="noreferrer">
+                      Code
+                    </a>
+                  ) : null}
                 </div>
               </div>
+              <p className="muted">{p.description}</p>
+              <div className="tags">
+                {p.stack.map((s, j) => (
+                  <Pill key={j}>{s}</Pill>
+                ))}
+              </div>
             </div>
-          ))}
-        </div>
-      </Section>
+          </div>
+        ))}
+      </div>
+    </Section>
 
       {/* Experience */}
       <Section id="experience" title="Experience">

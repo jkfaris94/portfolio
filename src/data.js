@@ -9,7 +9,7 @@ export const profile = {
   website: "https://JohnnyFaris.com",
   github: "https://github.com/jkfaris94",
   linkedin: "https://www.linkedin.com/in/johnny-faris/",
-  resume: "/resume.pdf" // put resume.pdf in /public
+  resume: "/Johnny_Faris_resume.pdf" // put resume.pdf in /public
 };
 
 export const projects = [
@@ -20,8 +20,8 @@ export const projects = [
     description:
       "React app to save and organize recipe information. Emphasized single‑responsibility components and clean state flows.",
     stack: ["React", "HTML5", "CSS", "Bootstrap"],
-    links: { live: "", repo: "" },
-    image: "/recipe.png" // optional screenshot in /public
+    links: { live: "https://bakery-inventory-manager.onrender.com", repo: "https://github.com/jkfaris94/bakery-inventory-manager" },
+    image: "/public/recipe.png" // optional screenshot in /public
   },
   {
     title: "Movie Database Application",
@@ -30,8 +30,8 @@ export const projects = [
     description:
       "Backend for a movie site with search, theaters, and reviews. CRUD for reviews, router/controller architecture, Knex data layer.",
     stack: ["Node.js", "Express", "Knex", "PostgreSQL"],
-    links: { live: "", repo: "" },
-    image: "/movie.png"
+    links: { live: "", repo: "https://github.com/jkfaris94/WeLoveMovies-back-end" },
+    image: "/welovemovies.png"
   },
   {
     title: "Flashcard Application",
@@ -40,7 +40,7 @@ export const projects = [
     description:
       "React flashcard learning app with full CRUD for decks/cards, React Router navigation, and form handling.",
     stack: ["React", "React Router", "Bootstrap"],
-    links: { live: "", repo: "" },
+    links: { live: "", repo: "https://github.com/jkfaris94/Flashcard-O-Matic" },
     image: "/flashcard.png"
   }
 ];
