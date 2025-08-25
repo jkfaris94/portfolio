@@ -20,8 +20,8 @@ export const projects = [
     description:
       "A full-stack web application built for Maeve’s Fine Baked Goods to track raw ingredients, manage recipes, and produce finished baked goods. The system allows staff to create and manage ingredients, build recipes by combining ingredients, and “bake” recipes to update inventory in real time.",
     stack: ["PostgreSQL", "Express", "React", "Node.js", "Knex", "Bootstrap"],
-    links: { live: "https://bakery-inventory-manager.onrender.com", repo: "https://github.com/jkfaris94/bakery-inventory-manager" },
-    image: "recipe.png" // optional screenshot in /public
+    links: { live: "https://bakery-inventory-manager-frontend.onrender.com", repo: "https://github.com/jkfaris94/bakery-inventory-manager" },
+    image: "recipe.png" 
   },
   {
     title: "Movie Database Application",
